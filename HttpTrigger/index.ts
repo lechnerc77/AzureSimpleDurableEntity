@@ -9,11 +9,11 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         const client = df.getClient(context);
         const entityId = new df.EntityId("Counter", req.query.name);
 
-        let enityState = await client.readEntityState(entityId);
+        let entityState = await client.readEntityState(entityId);
         await client.signalEntity(entityId, "add", 1);
 
         context.res = {
-            body: "The current state value is " + enityState.entityState
+            body: "The current state value is " + entityState.entityState
         };
     }
     else {
