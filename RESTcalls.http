@@ -1,0 +1,11 @@
+### Get current status of Durable entity
+http://localhost:7071/api/HttpTrigger?name=myCounter
+
+### Increment counter by default value (= 1)
+POST http://localhost:7071/api/HttpTrigger?name=myCounter
+
+### Increment counter by custom value
+POST http://localhost:7071/api/HttpTrigger?name=myCounter&increment=2
+
+### Reset counter
+DELETE http://localhost:7071/api/HttpTrigger?name=myCounter
