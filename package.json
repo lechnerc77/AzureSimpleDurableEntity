@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@azure/functions": "^1.2.2",
-    "typescript": "^3.9.3",
+    "typescript": "^3.9.5",
     "@types/node": "^14.0.10"
   }
 }
